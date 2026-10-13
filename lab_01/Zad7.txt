@@ -1,0 +1,51 @@
+System rezerwacji hotelowej
+
+1. Klasa: Pokoj
+
+Stan: numerPokoju, typ, cenaZaNoc, czyPosprzatany, pojemnosc
+
+Odpowiedzialności: Zwrócenie swojej ceny, zmiana statusu na "posprzątany" lub "do sprzątania".
+
+2. Klasa: Gosc
+
+Stan: imie, nazwisko, numerTelefonu, adresEmail
+
+Odpowiedzialności: Przechowywanie i aktualizacja danych kontaktowych klienta (np. zmiana numeru telefonu).
+
+3. Klasa: Rezerwacja
+
+Stan: dataZameldowania, dataWymeldowania, status, Gosc, Pokoj
+
+Odpowiedzialności: Obliczenie całkowitego kosztu pobytu (na podstawie dat i ceny pokoju), zmiana statusu rezerwacji.
+
+4. Klasa: Platnosc
+
+Stan: kwota, metodaPlatnosci, dataTransakcji, czyZaksiegowana, Rezerwacja
+
+Odpowiedzialności: Przeprowadzenie transakcji, wystawienie potwierdzenia wpłaty.
+
+
+
+Które obiekty powinny wiedzieć o istnieniu innych obiektów?
+
+Rezerwacja musi wiedzieć o istnieniu Gościa (kto rezerwuje) oraz Pokoju (co jest rezerwowane).
+
+Płatność musi wiedzieć o Rezerwacji (za co płacimy i ile to kosztuje).
+
+
+
+Czy któraś odpowiedzialność została przypisana do niewłaściwego obiektu?
+
+
+
+Które informacje z rzeczywistego świata świadomie pomijasz w swoim modelu?
+
+Np. u Gościa: wzrost, waga, kolor oczu.
+np. w Pokoju: kolor zasłon, model telewizora, grubość dywanu.
+
+
+Dlaczego ich nie potrzebujesz?
+
+Ponieważ program nie służy do projektowania wnętrz ani do profilowania ludzi. 
+Służy do rezerwowania miejsc do spania i wystawiania rachunków. 
+Musimy więc odrzucić wszystkie niepotrzebne detale.

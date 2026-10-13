@@ -1,0 +1,11 @@
+Klasa: Ksiazka
+Stan (dane): tytul, autor, isbn, rokWydania
+Odpowiedzialności: przechowywanie danych o samej sobie.
+
+Klasa: Czytelnik
+Stan: imie, nazwisko, numerKarty
+Odpowiedzialności: przechowywanie danych użytkownika.
+
+Klasa: Wypozyczenie
+Stan: dataWypozyczenia, terminZwrotu, Ksiazka (powiązanie), Czytelnik (powiązanie)
+Odpowiedzialności: np. śledzenie, czy książka nie jest przetrzymana (np. sprawdzCzyPrzetrzymana()).

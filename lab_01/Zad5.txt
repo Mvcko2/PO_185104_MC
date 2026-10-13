@@ -1,0 +1,7 @@
+Krok pętli (i)	wynik = wynik + x	x = x * 2
+0	        wynik = 0 + 2 = 2	x = 2 * 2 = 4
+1	        wynik = 2 + 4 = 6	x = 4 * 2 = 8
+2	        wynik = 6 + 8 = 14	x = 8 * 2 = 16
+3	        wynik = 14 + 16 = 30	x = 16 * 2 = 32
+4 Koniec pętli bo "i" wynosi 4 co nie spełnia warunku i<4. 
+Program wypisze x=32 i wynik=30.

@@ -1,0 +1,15 @@
+A. System wypożyczalni samochodów
+Wymagane: numerRejestracyjny, kaucja, cenaZaDobe, czyWypozyczony, poziomPaliwa, kategoriaWymaganegoPrawaJazdy.
+
+B. Gra wyścigowa
+Wymagan3: aktualnaPredkosc, przyspieszenie, wspolczynnikTarciaOpon, waga, model3D, poziomZniszczenKaroserii, iloscNitro.
+
+C. System warsztatu samochodowego
+Wymagane: numerVIN, przebiegWKilometrach, historiaNapraw, opisAktualnejUsterki, wlasciciel.
+
+
+Dlaczego nie istnieje jedna „poprawna” klasa Samochod pasująca do każdego programu?
+
+Gdybyśmy stworzyli jedną gigantyczną klasę Samochod zawierającą wszystko na raz, kod stałby się ciężko użyteczny.
+Gra wyścigowa marnowałaby pamięć na przechowywanie numerów rejestracyjnych każdego wirtualnego auta, a system rezerwacji w wypożyczalni musiałby co sekundę analizować ilość nitro.
+Potrzebujemy tylko to co jest wymagane do konkretnego celu.
